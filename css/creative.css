@@ -18,7 +18,14 @@ hr {
 
 hr.light {
   border-color: #fff; }
+  
+  hr.dark {
+  border-color: #000000; }
 
+  hr.faded {
+  border-color: rgba(255, 255, 255, 0.7); }
+  
+  
 a {
   color: #9fa8a3;
   -webkit-transition: all 0.2s;
@@ -45,6 +52,7 @@ h6 {
   color: rgba(255, 255, 255, 0.7); }
 
 section {
+  /*height: 100vh; */
   padding: 8rem 0; }
 
 .section-heading {
@@ -71,20 +79,24 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #212529; }
 
+
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
-  transition: all 0.2s; }
+  transition: all 0.2s; 
+}
   #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
     color: #9fa8a3;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; 
+}
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #9fa8a3; }
+      color: #9fa8a3; 
+    }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
     font-size: .9rem;
@@ -106,7 +118,8 @@ body {
       border-color: transparent;
       background-color: transparent; }
       #mainNav .navbar-brand {
-        color: rgba(255, 255, 255, 0.7); }
+        color: rgba(255, 255, 255, 0.7);    
+    }
         #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
           color: #fff; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link {
@@ -131,7 +144,7 @@ body {
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #9fa8a3; } }
 
-header.masthead {
+.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/stockfotos/pexels-photo-303159.jpeg");
@@ -181,7 +194,7 @@ header.masthead {
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: rgba(240, 95, 64, 0.9);
+    background: #9fa8a3;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s; 
@@ -199,7 +212,7 @@ header.masthead {
         font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; 
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         text-transform: uppercase; 
 }
@@ -213,14 +226,52 @@ header.masthead {
 }
 @media (min-width: 768px) {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-      font-size: 16px; 
+      font-size: 22px; 
 	}
 	.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-      font-size: 22px; 
+      font-size: 16px; 
     } 
 }
+@media screen and (max-width: 900px) {
+  #services-desktop  {
+    display: none;
+    
+  }
+  
+}
 
+@media screen and (min-width: 900px) {
+  #services-mobile  {
+    display: none;
+    
+  }
+  .servicesection{
+   padding: 0 !important;
+  }
+  
+}
 
+  
+}
+
+.portfolio-hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #e3e0cf; }
+  
+.servicesection {
+ 
+ background-color: #9fa8a3;
+ color: #fff;
+
+}
+#feedback{
+	background-color: #9fa8a3;
+}
+#contact{
+	background-color: #ffffff;
+}
+ 
 .text-primary {
   color: #9fa8a3 !important; }
 
@@ -258,13 +309,29 @@ header.masthead {
 .carousel-caption {
   /*bottom: 3rem;*/
   z-index: 10;
+  font-size: 14px;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 20rem;
   background-color: #9fa8a3;
+  
 }
+
+@media screen and (max-width: 900px) {
+  .carousel-item  {
+    height: 20rem;
+  }
+  
+}
+
+@media screen and (min-width: 900px) {
+  .carousel-item  {
+    height: 15rem ;
+    
+  }
+}
+
 .carousel-item > img {
   position: absolute;
   top: 0;
@@ -273,11 +340,23 @@ header.masthead {
   height: 32rem;
 }
 
+
 /* Link Button Adjustments
 */
 
 .linkedinIcon:hover{
     color: #0077B5;
+}
+
+.xingIcon:hover{
+    color: #026466;
+}
+.skypeIcon:hover{
+    color: #00aff0;
+}
+
+.angellistIcon:hover{
+	color: #3f81c7;
 }
 
 .mailIcon:hover{
